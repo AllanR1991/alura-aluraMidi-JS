@@ -21,6 +21,10 @@
     <h1>Alura Midi</h1>
 
     <section class="teclado">
+        <!-- 
+            No Onclick tomar cuidado com as função alert utilizar de aspas simples para não ter problema com as aspas duplas do html 
+            <button onclick="alert('Pom')" class="tecla tecla_pom">Pom</button>
+        -->
         <button class="tecla tecla_pom">Pom</button>
         <button class="tecla tecla_clap">Clap</button>
         <button class="tecla tecla_tim">Tim</button>
@@ -34,6 +38,7 @@
         <button class="tecla tecla_tom">Tom</button>
     </section>
 
+    <!-- a tag audio não aparece no navegador por estar faltando o atributo controls -->
     <audio src="sounds/keyq.wav" id="som_tecla_pom"></audio>
     <audio src="sounds/keyw.wav" id="som_tecla_clap"></audio>
     <audio src="sounds/keye.wav" id="som_tecla_tim"></audio>
@@ -44,5 +49,6 @@
     <audio src="sounds/keyx.wav" id="som_tecla_tic"></audio>
     <audio src="sounds/keyc.wav" id="som_tecla_tom"></audio>
 
+    <script src="./main.js"></script>
 </body>
 </html>
